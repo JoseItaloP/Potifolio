@@ -1,0 +1,554 @@
+/*Fonte para titulos*/
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+/*Fonta para textos*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/*font-family: "Montserrat", sans-serif;
+    100 - 900
+*/
+
+:root {
+  --Escuro: #333333;
+  --Verde: #48e5c2;
+  --Claro: #fcfaf9;
+  --Linkedin: #0a66c2;
+  --Github: #24292f;
+  --PDF: #b30b00;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(51,51,51);
+background: linear-gradient(180deg, rgba(51,51,51,1) 14%, rgba(72,229,194,1) 100%);
+  color: var(--Claro);
+}
+
+/*Top*/
+h1,
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  color: var(--Verde);
+}
+
+strong {
+  color: var(--Verde);
+}
+
+.transitions{
+  transition: 1s;
+}
+
+.FaceDiv {
+  min-width: 100%;
+  min-height: 90vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.FrontLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ElementsFace {
+  margin-top: 2em;
+}
+
+.Fh3 {
+  font-size: 1.1em;
+  color: var(--Claro);
+}
+
+.Fh1 {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--Verde);
+  position: relative;
+  font-size: 4em;
+  margin-top: -0.3em;
+}
+
+.Fh1::before{
+  content: "Desenvolvedor";
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+  color: var(--Verde);
+  filter: drop-shadow(0 0 25px var(--Verde));
+  animation: ChangeColor 1s ease-in;
+}
+
+
+.Sh1 {
+  font-size: 2em;
+  color: var(--Claro);
+  border-right: 4px solid;
+  height: 100%;
+  width: 31%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(8), cursor 0.4s step-end infinite alternate;
+}
+
+.Divider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: -1em;
+}
+
+.AboutMe {
+  font-family: "Montserrat", sans-serif;
+  width: 10em;
+  margin-top: 0.7em;
+  text-align: end;
+}
+
+/*Main*/
+
+.MainDiv {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 5em;
+
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.Grid{
+  display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-items: center;
+    align-items: stretch;
+}
+
+.Project {
+  max-width: 24em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.ProjectTittle{
+  font-size: 2rem;
+}
+
+.Bestes {
+  font-size: 2em;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 2em;
+}
+
+.Imgs {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.NoteB {
+  width: 100%;
+}
+
+.Phone {
+  width: 5em;
+  position: absolute;
+  margin: 124px 300px 0px 0px;
+}
+
+.ProjectText {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1em;
+}
+
+.Butto {
+  background-color: var(--Claro);
+
+  width: 100%;
+  padding: 0.4em 0;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 0;
+}
+
+.Butto > a {
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
+  text-decoration: none;
+  color: var(--Escuro);
+  background-color: transparent;
+}
+
+.Butto:hover {
+  cursor: pointer;
+  background-color: var(--Verde);
+}
+
+.Butto:hover > a {
+  color: var(--Claro);
+}
+
+/*FOOTER*/
+
+.FootDiv {
+  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  background-color: var(--Escuro);
+}
+
+.Contato {
+  color: var(--Claro);
+}
+
+svg {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  background-color: transparent;
+  transition: 0.5s;
+}
+.SVGFile > svg > path {
+  color: var(--Claro);
+  background-color: transparent;
+}
+
+.LinkedinHover:hover > svg > path {
+  color: var(--Linkedin);
+}
+
+.LinkedinHover:hover > svg {
+  transform: scale(2, 2);
+  transform-origin: center;
+  position: sticky;
+  z-index: 10;
+}
+
+.GitHover:hover > svg > path {
+  color: var(--Github);
+}
+.GitHover:hover > svg {
+  transform: scale(2, 2);
+  transform-origin: center;
+  position: sticky;
+  z-index: 10;
+}
+
+.PDFHover:hover > svg > path {
+  color: var(--PDF);
+}
+
+.PDFHover:hover > svg {
+  transform: scale(2, 2);
+  transform-origin: center;
+  position: sticky;
+  z-index: 10;
+}
+
+.LinksBox {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.LinksBox > ul {
+  display: flex;
+  align-items: center;
+}
+
+.LinksBox > ul > li {
+  list-style: none;
+  width: 3em;
+}
+
+.EmailName {
+  padding: 1em;
+  border: 0;
+  border-radius: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-top: 5px;
+
+  background-color: var(--Claro);
+  color: var(--Escuro);
+}
+
+.EmailName:hover {
+  cursor: pointer;
+  color: var(--Claro);
+  background-color: var(--Verde);
+}
+
+.ProjectText > strong{
+  color: var(--Escuro);
+}
+
+/*ANIMAÇÕES*/
+
+.Drop {
+  animation: Drop 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.Drop2 {
+  animation: Drop linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 20%;
+}
+
+.Drop3 {
+  animation: Drop3 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+.Drop4 {
+  animation: Drop4 linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+.Drop5 {
+  animation: Drop linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10%;
+}
+
+.DropLink > svg > path {
+  animation: DropLink 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 10%;
+}
+
+.SlidFooter{
+  -webkit-animation: SlideInBot 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: SlideInBot cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 22%;
+}
+
+@keyframes Drop {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+@keyframes Drop3 {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform-origin: 0% 100%;
+    transform-origin: 0% 100%;
+    opacity: 1;
+  }
+}
+
+@keyframes Drop4 {
+  0% {
+    -webkit-transform: translateZ(-80%);
+    transform: translateZ(-80%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes DropLink {
+  0% {
+    -webkit-transform: translateZ(100%);
+    transform: translateZ(100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+@keyframes ChangeColor {
+  0%{
+    width: 0%;
+    filter: drop-shadow(0 0 0px var(--Verde));
+  }
+  100% {
+    width: 100%;
+    filter: drop-shadow(0 0 25px var(--Verde));    
+  }
+}
+
+@keyframes Recolor {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6),
+      0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25),
+      0 0 100px rgba(255, 255, 255, 0.1);
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.slowMotion {
+  transition: 0.5s;
+}
+
+/*Change Screen*/
+
+@media screen and (min-width: 550px) {
+  .Fh1{
+    font-size: 5em;
+  }
+
+  .Fh3{
+    font-size: 1.4em;
+  }
+
+  .Sh1{
+    font-size: 3em;
+    width: 38%;
+  }
+
+  .AboutMe{
+    width: 15em;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .Fh1{
+    font-size: 6em;
+  }
+
+  .Fh3{
+    font-size: 1.6em;
+  }
+
+  .Sh1{
+    font-size: 3.5em;
+    width: 38%;
+  }
+
+  .AboutMe{
+    width: 18em;
+  }
+
+  .Drop2 {
+    animation-range: entry 0% cover 10%;
+  }
+}
+
+
+@media screen and (min-width: 1090px) {
+
+  .Grid{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .FaceDiv {
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .ElementsFace {
+    margin-top: -18em;
+  }
+
+  .Fh3 {
+    font-size: 2.1em;
+  }
+
+  .Fh1 {
+    font-size: 11em;
+  }
+
+  .Sh1 {
+    font-size: 6em;
+    width: 34%;
+  }
+  .AboutMe {
+    width: 20em;
+    font-size: 1.1em;
+  }
+
+  .SlideInBot {
+    -webkit-animation: SlideInBot 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation: SlideInBot 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+  }
+
+  .Drop {
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+  }
+
+
+
+  @keyframes SlideInBot {
+    0% {
+      -webkit-transform: translateY(1000px);
+      transform: translateY(1000px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+}
+
+@-webkit-keyframes SlideInBot {
+  0% {
+    -webkit-transform: translateY(1000px);
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
