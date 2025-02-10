@@ -1,4 +1,3 @@
-import React from "react";
 import Note from "./assets/Notebook.png";
 import Phone from "./assets/Phone.png";
 import Mnote from "./assets/MovieesNoteBook.png"
@@ -23,14 +22,11 @@ function App() {
           <h3 className="Fh3 transitions">Oi, me chamo José Italo, e eu sou um</h3>
           <h1 className="Fh1 transitions">Desenvolvedor</h1>
           <div className="Divider">
-            <h1 className="Sh1 transitions">FrontEnd</h1>
+            <h1 className="Sh1 transitions">FullStack</h1>
 
             <p className="AboutMe transitions">
-              Após estudar Design por 2 anos, migrei para a área de tecnologia
-              em desenvolvimento Web trabalhando como freelancer usando{" "}
-              <strong>React</strong> e <strong>JavaScript</strong>, além das
-              funcionalidades mais básicas como <strong>Html</strong> e{" "}
-              <strong>Css</strong>.{" "}
+              Após estudar Design por 2 anos, migrei para a área de tecnologia em desenvolvimento Web trabalhando como freelancer usando{" "}
+              <strong>React</strong>, <strong>Next.Js</strong> e <strong>TypeScript</strong> em conjunto de <strong>Node.JS</strong> para construção de Api, além das edições e construções de bancos de dados usando <strong>MySql</strong>{" "}
             </p>
           </div>
         </div>

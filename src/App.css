@@ -91,7 +91,7 @@ strong {
   color: var(--Claro);
   border-right: 4px solid;
   height: 100%;
-  width: 31%;
+  width: 32%;
   white-space: nowrap;
   overflow: hidden;
   animation: typing 2s steps(8), cursor 0.4s step-end infinite alternate;
@@ -503,7 +503,7 @@ svg {
 
   .Sh1 {
     font-size: 6em;
-    width: 34%;
+    width: 35%;
   }
   .AboutMe {
     width: 20em;
