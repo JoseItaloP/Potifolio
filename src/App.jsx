@@ -2,6 +2,8 @@ import Note from "./assets/Notebook.png";
 import Phone from "./assets/Phone.png";
 import Mnote from "./assets/MovieesNoteBook.png"
 import Mphone from "./assets/MovieeesPhone.png";
+import TDnote from "./assets/NotebookToDoList.png"
+import TDphone from "./assets/PhoneToDoLi.png"
 import GitHub from "./assets/GitHub.jsx";
 import Linkedin from "./assets/Linkedin.jsx";
 import { GrDocumentPdf } from "react-icons/gr";
@@ -25,7 +27,7 @@ function App() {
             <h1 className="Sh1 transitions">FullStack</h1>
 
             <p className="AboutMe transitions">
-              Após estudar Design por 2 anos, migrei para a área de tecnologia em desenvolvimento Web trabalhando como freelancer usando{" "}
+              Após estudar Design por 2 anos, migrei para a área de tecnologia em desenvolvimento Web trabalhando como freelancer usando
               <strong>React</strong>, <strong>Next.Js</strong> e <strong>TypeScript</strong> em conjunto de <strong>Node.JS</strong> para construção de Api, além das edições e construções de bancos de dados usando <strong>MySql</strong>{" "}
             </p>
           </div>
@@ -86,6 +88,35 @@ function App() {
             <button className="Butto slowMotion  Drop2" >
               <a
                 href="https://movieees-sigma.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Projeto
+              </a>
+            </button>
+          </div>
+          <div className="Project">
+            <h1 className="Drop4 ProjectTittle">To-Do List</h1>
+            <div className="Imgs Drop3">
+              <img
+                src={TDnote}
+                alt="Exemplo de projeto ToDoList em um notebook"
+                className="NoteB"
+              />
+              <img
+                src={TDphone}
+                alt="Exemplo de projeto ToDoList em um Celular."
+                className="Phone"
+              />
+            </div>
+            <p className="ProjectText Drop2">
+              To-Do List é um projeto para você organizar o seu dia a dia, com um sistema de login com JWT(JasonWebToken) e envio de senha diretamente pelo Email do usuário, ele pode cadastrar, editar e deletar tarefas próprias do seu dia a dia.
+              <br />
+              Projeto feito com <strong>Next.js</strong> e <strong>Tailwind</strong> em seu <i>FrontEnd</i> e <strong>Node</strong> e <strong>fastify</strong> em seu <i>BackEnd</i>, juntamente com <strong>Nodemailer</strong> para envio de email, <strong>Jest</strong>, <strong>react-testing-library</strong> e <strong>Vitest</strong> para testes automatizados unitário e end-to-end. O Projeto também conta com o uso do <strong>MongoDB</strong> para persistir os dados salvos.
+            </p>
+            <button className="Butto slowMotion  Drop2" >
+              <a
+                href="https://tasks-project-alpha.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
